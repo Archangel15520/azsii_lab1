@@ -101,7 +101,7 @@ mnist_train, mnist_val = random_split(mnist_temp, [50000, 10000])  # Делим 
 mnist_test = datasets.MNIST(root='datasets/mnist', train=False, download=True, transform=mnist_tf)  # Загружаем тестовый набор данных MNIST
 ```
 
-![image]()
+![image](https://github.com/Archangel15520/azsii_lab1/blob/main/screenshot/1.JPG)
 
 **Тут происходит подготовка данных для работы с набором CIFAR-10.** Сначала задаются средние значения и стандартные отклонения для нормализации изображений, затем определяются минимальные и максимальные границы для обрезки значений пикселей. Устанавливаются трансформации для обучения и тестирования, включая случайную обрезку, горизонтальное отражение и нормализацию. Далее загружается обучающий и тестовый набор данных CIFAR-10, при этом обучающий набор разбивается на обучающую и валидационную выборки. В конце задаются названия классов, содержащихся в наборе данных.
 
@@ -179,9 +179,9 @@ for _ in ZADANIE:
         torch.cuda.empty_cache()  # Очищаем кеш CUDA, если используется GPU
 ```
 
-![image]()
+![image](https://github.com/Archangel15520/azsii_lab1/blob/main/screenshot/2.JPG)
 
-![image]()
+![image](https://github.com/Archangel15520/azsii_lab1/blob/main/screenshot/3.JPG)
 
 **В первой части отрывка компиляции, взятого для примера**, происходит оценка модели LeNet на наборе данных MNIST с использованием атак FGSM и DeepFool для различных значений параметра epsilon (fgsm_eps).
 
@@ -243,9 +243,9 @@ for _ in ZADANIE:
     torch.cuda.empty_cache()  # Очищаем кэш GPU для освобождения памяти
 ```
 
-![image]()
+![image](https://github.com/Archangel15520/azsii_lab1/blob/main/screenshot/4.JPG)
 
-![image]()
+![image](https://github.com/Archangel15520/azsii_lab1/blob/main/screenshot/5.JPG)
 
 # Вывод:
 
@@ -290,9 +290,9 @@ for _ in ZADANIE:
     torch.cuda.empty_cache()
 ```
 
-![image]()
+![image](https://github.com/Archangel15520/azsii_lab1/blob/main/screenshot/6.JPG)
 
-![image]()
+![image](https://github.com/Archangel15520/azsii_lab1/blob/main/screenshot/7.JPG)
 
 # Вывод:
 
@@ -364,11 +364,11 @@ eps_values = [0.001, 0.02, 0.2, 0.5, 0.9, 10]  # Определить значе
 display_attack_examples(model, mnist_loader_test, eps_values, device, mnist_min, mnist_max)
 ```
 
-![image]()
+![image](https://github.com/Archangel15520/azsii_lab1/blob/main/screenshot/8.JPG)
 
-![image]()
+![image](https://github.com/Archangel15520/azsii_lab1/blob/main/screenshot/9.JPG)
 
-![image]()
+![image](https://github.com/Archangel15520/azsii_lab1/blob/main/screenshot/10.JPG)
 
 **мы получаем графическое представление, показывающее оригинальные изображения из тестового набора MNIST и их искаженные версии после применения атаки FGSM с различными значениями параметра eps.**
 
@@ -438,7 +438,7 @@ df_results = pd.DataFrame(results)
 print(df_results)
 ```
 
-![image]()
+![image](https://github.com/Archangel15520/azsii_lab1/blob/main/screenshot/11.JPG)
 
 * Model — название модели, используемой для оценки (в данном случае это LeNet_MNIST).
 * eps — значения epsilon, используемые в методе атаки FGSM. Это параметр, который определяет силу атаки, т.е. насколько сильно изменяются пиксели изображений.
