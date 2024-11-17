@@ -4,6 +4,14 @@
 ## Студент: Васильев Григорий Максимович
 ## Вариант: 3
 
+  ---
+
+**WARNING(Важная информация): 1. Все работы по данному предмету можно найти по ссылке: https://github.com/Archangel15520/AZSII-REPO/tree/main**
+
+**2. Сылка на выполненую работу в среде google colab: https://colab.research.google.com/drive/1mcGH_Np_B7h5YXqymV6ctvfZTgCCXW4h#scrollTo=rzmtOhAZLsvL** 
+
+  ---
+  
 # Получаем копию репозитория EEL6812_DeepFool_Project на нашем локальном устройстве
 
 ```
